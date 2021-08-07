@@ -1,0 +1,60 @@
+/*Recipes will have all the css as external, not internal or inline. Alphabetized */
+
+body{
+    background-color:salmon;
+    line-height: 2;
+
+}
+
+#divContainer{
+    display: flex;
+    align-items: row;
+    justify-content: space-around;
+    
+}
+#divContainer h3{
+    text-align: center;
+}
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: oblique;
+    
+}
+.heading-font{
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    border-left: 5px double orange;
+    background-color: lightgoldenrodyellow;
+}
+img {
+    border-radius: 10%;
+    border: 10px solid palegreen;
+    width: 300px;
+    height: auto;
+    
+}
+li{
+    background-color: lightblue;
+    padding: 5px;
+    margin: 10px;
+}
+table{
+    border: 2px solid darkred;
+}
+
+.table{
+    border: 2px solid darkred;
+}
+
+td{
+    border: 1px solid darkred;
+}
+
+th{
+    border-left: 1px solid darkred;
+}
+
+
+

@@ -1,0 +1,41 @@
+#audioCon{
+    position: relative;
+    top: 10%;
+    left: 5%;
+    border: 1px solid black;
+    border-radius: 40px;
+
+    animation-name: movingControls;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+#audioCon:hover{
+    transform: scale(1.1);
+}
+
+
+
+#box{
+    position: sticky;
+    top: 20px;
+    left: 20px;
+}
+
+@keyframes movingControls {
+    50%{
+        left: 50%;
+        
+    } 
+    
+}
+
+#wrapper{
+    position: relative;
+    width: auto;
+    height: 2000px;
+
+    background: linear-gradient(0deg, rgb(192, 0, 67), rgb(0, 240, 230));
+
+}
+

@@ -1,0 +1,81 @@
+Cascading Style Sheets (CSS) is used to design the webpage, though not a programming language and more like styling
+Inline- used within opening tags and overrides other CSS format
+Internal- using <style>CSS selector</style> within the html document
+External- linking the html document with a CSS file
+	<link rel="stylesheet" type="text/css" href="">
+----------------
+CSS selector{
+	key:value;
+}
+-----------------
+
+selector, declarations, property, value
+
+Google Font Library allows us to import fonts via link
+<link href="url" rel="spreadsheet" type="text/css">
+The font-family often has backup fonts in case the preferred one does not load ("degrading")
+Generic font-family are keywords in CSS
+font: style, weight, decoration, transform, 
+letter: spacing
+word: spacing
+
+use "around words if there are spaces and not underscore dashes"
+
+border: width style color
+border-radius with px or %
+
+Color in Css uses hexadecimals, RGB, and HTML color names
+	Hexacode use 0-9, A-F to represent a 16 digit system. Colors use the RGB color model where #000000 first two 00 relates to R, the next two for G, and the next two for B
+	There are 256 options in the RGB selection
+
+.classNameSelector subElement{}
+#idName subElement{}
+[attr="value"]{}
+
+Length Unit Options:
+	px for pixels
+	Absolute lengths-in and mm are fixed measurements
+	Relative lengths- em and rem will be based on the the characteristics of the element
+	VH-viewport height will adjust the content based on the size of your window
+
+id styles takes precedence over class styles, and all styles will override body styles unless they are inline
+In an internal CSS file, the latter style will override any previous relating style since programs read the declarations from top to bottom	(ex: font color was stated pink first, then blue second)
+
+Importing CSS will cause overrides, so if you desire an element to not be changed use !important
+	ex: color: teal !important;
+
+Fall back values are essential for older browsers that do not support certain features or for debugging, and is set by listing it after the main value with a comma
+
+Variables exist in CSS and have similar logic to basic OOP:
+	--cssVariable: value;
+	background-color: var(--cssVariable);
+	Using a variable within a selector rule set means the scope is local --> selector {--variable: value;} 
+	If you wish to use it globally, you must use the :root selector as it is linked to your html document --> :root{--var: value;}
+	An elemental variable has precedence over html variables
+
+Media queries allows specific CSS to be applied based on media types/devices and are breakpoints
+
+Visual Basics with CSS
+	text-align will align text for you
+	width & height is used with px, em, or percentage based on parental box
+	<strong> tag for font-weight: bold;
+	<u> tag for text-decoration: underline;
+	<em> tag for font-style: italic;
+	<s> tag for text-decoration; line-through;
+
+	<hr> for horizontal
+
+	rgba() for color blacks with opacity/transparency control  --> very noice!!
+
+	box-shadow: offset-x, offset-y, blur-radius, spread-radius, color;
+
+	opacity: 0 (transparent) and 1 (opaque)
+
+	text-transform: 5 different types;
+
+	font-weight for thickness
+	font-size for text size
+	
+	line-height for spacing between line text
+
+pseudo-classes are used for selecting the states of the selectors 

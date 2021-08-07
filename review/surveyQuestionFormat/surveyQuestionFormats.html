@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta>
+        <link rel="stylesheet" href="surveyQuestionFormat.css">
+        <script>
+            function checkBoxLimit() {
+                var checkBoxGroup = document.forms['form_name']['mealMatrixOptions'];			
+                var limit = 2;
+                for (var i = 0; i < checkBoxGroup.length; i++) {
+                    checkBoxGroup[i].onclick = function() {
+                        var checkedcount = 0;
+                        for (var i = 0; i < checkBoxGroup.length; i++) {
+                            checkedcount += (checkBoxGroup[i].checked) ? 1 : 0;
+                        }
+                        if (checkedcount > limit) {
+                            console.log("You can select maximum of " + limit + " checkboxes.");
+                            alert("You can select maximum of " + limit + " checkboxes.");						
+                            this.checked = false;
+                        }
+                    }
+                }
+            }
+                </script>
+    </head>
+    <body>
+        <!--Create a multiple choice. What range is your BMI?-->
+        <div id="multiple" class="questions">
+            <div id="multiQuestion">What is your BMI range as of now?</div>
+            <label>
+            <div class="multiAnswer">
+                <input type="radio" name="option" value="1" checked>1
+            </div>
+            <div class="multiAnswer">
+                <input type="radio" name="option" value="1">2
+            </div>
+            <div class="multiAnswer">
+                <input type="radio" name="option" value="1">3
+            </div>
+            <div class="multiAnswer">
+                <input type="radio" name="option" value="1">4
+            </div>
+             </label>
+        </div>
+        <!--Rating Question. How would you rate the healthyness of your meals? 1 == processed || 10 == whole-->
+        <div id="rating" class="questions">
+            <div id="ratingQuestion">How would you rate the healthiness of your meals?</div>
+            <div class="ratingAnswerSec">
+                <div class="rateAnswer">
+                    <button type="button">1</button>
+                </div>
+                <div class="rateAnswer">
+                    <button type="button">2</button>
+                </div>
+                <div class="rateAnswer">
+                    <button type="button">3</button>
+                </div>
+                <div class="rateAnswer">
+                    <button type="button">4</button>
+                </div>
+                <div class="rateAnswer">
+                    <button type="button">5</button>
+                </div>
+            </div>
+
+        </div>
+        <!--What range of calories do your breakfast usually fall in?-->
+        <div id="radioBF" class="questions">
+            <fieldset id="radioBFquestion">
+                <legend>What range of calories do your breakfast usually fall in?</legend>
+                <label class="radioBFanswer"><input type="radio" name="calRange">Below 100</label>
+                <label class="radioBFanswer"><input type="radio" name="calRange">100-200</label>
+                <label class="radioBFanswer"><input type="radio" name="calRange">200-300</label>
+                <label class="radioBFanswer"><input type="radio" name="calRange">300-400</label>
+                <label class="radioBFanswer"><input type="radio" name="calRange">Above 400</label>
+            </fieldset>
+        </div>
+        <!--Select the main source of protein in your daily life-->
+        <div id="select" class="questions">
+            <label for="selectProtein">Select the main source of protein in your daily life:</label>
+            <select id="selectProtein">
+                <option value="eggs">Egg</option>
+                <option value="meat">Meat</option>
+                <option value="beans">Beans</option>
+            </select>
+        </div>
+    
+        <!--When and why did your binging habit start?-->
+        <div id="bingeText" class="questions">
+            <div id="bingeTextQuestion">
+                <label for="bingeTextAnswer">When and why did your binging habit start?</label><br>
+                <input type="text" id="bingeTextAnswer" placeholder="Your answer...">
+            </div>
+        </div>
+        <!--Select from the options to customize a meal-->
+        <div id="mealMatrix">
+            <form method="post" name="form_name" id="form_name">
+            <label style="text-align: center;" for="matrixOptions">Select at least three items per row:</label>
+            <table id="matrixOptions" border="1" cellspacing="10" cellpadding="5">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Broccoli</th>
+                        <th>Asparagus</th>
+                        <th>Carrots</th>
+                        <th>White Mushrooms</th>
+                        <th>Sweet Potatoes</th>
+                        <th>Corn</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="row1">
+                        <td class="meal">Breakfast</td>
+                        <td><input type="checkbox" name="mealMatrixOptions"></td>
+                        <td><input type="checkbox" name="mealMatrixOptions"></td>
+                        <td><input type="checkbox" name="mealMatrixOptions"></td>
+                        <td><input type="checkbox" name="mealMatrixOptions"></td>
+                        <td><input type="checkbox" name="mealMatrixOptions"></td>
+                        <td><input type="checkbox" name="mealMatrixOptions"></td>
+                    </tr>
+                    <hr>
+                    <tr id="row2">
+                        <td class="meal">Lunch</td>
+                        <td><input type="checkbox" name="mealMatrixOptions"></td>
+                        <td><input type="checkbox" name="mealMatrixOptions"></td>
+                        <td><input type="checkbox" name="mealMatrixOptions"></td>
+                        <td><input type="checkbox" name="mealMatrixOptions"></td>
+                        <td><input type="checkbox" name="mealMatrixOptions"></td>
+                        <td><input type="checkbox" name="mealMatrixOptions"></td>
+                    </tr>
+                    <tr id="row3">
+                        <td class="meal">Dinner</td>
+                        <td><input type="checkbox" name="mealMatrixOptions"></td>
+                        <td><input type="checkbox" name="mealMatrixOptions"></td>
+                        <td><input type="checkbox" name="mealMatrixOptions"></td>
+                        <td><input type="checkbox" name="mealMatrixOptions"></td>
+                        <td><input type="checkbox" name="mealMatrixOptions"></td>
+                        <td><input type="checkbox" name="mealMatrixOptions"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        </div>
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+    </body>
+</html>

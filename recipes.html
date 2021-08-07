@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rose's Recipes</title>
+        <link rel="stylesheet" href="CSS\recipes.css">
+    </head>
+    <body>
+        <img src="#" alt="">
+        <h1>My Favorite Recipes</h1>
+        <h2 class="heading-font">Quick and Simple</h2>
+        <a href="#forum">Go to Forums</a>
+        
+        <p>Growing up overweight has affected my mentality and how I perceived myself 
+            when out in public: often awkward and embarrassed. It was not until I started to 
+            exercise did the weight scale go down and I became confident. Although now 
+            I have not followed my exercise routine and fell back into bad habits. Therefore,
+            this will be a page dedicated to learning more about being healthy and the different types 
+            of food I could consume to help me get back on track. I often use <a href="https://www.quora.com/" target="_blank">Quora</a>, 
+            <a href="https://www.reddit.com/" target="_blank">Reddit</a>, and <a href="https://www.youtube.com/" target="_blank">Youtube</a> to find help
+            on developing <strong>good eating </strong>habits.
+        </p>
+<div id="divContainer">
+        <div id="div1">
+            <h3 class="heading-font"><ul>Foods to Go <em>Cold Turkey</em> On:</h3>
+            <br>
+            <img src="images/raspberry-4599580_640.jpg" alt="rasberyOnSpoon">
+            <li>Sugary drinks: pop, juice, powdered mixtures, etc</li>
+            <li>Processed snacks: chips, crackers, cookies, granola, etc</li>
+            <li>Candy and unhealthy fats: Hersey's, beef, fried food, etc</li>
+        </ul>
+        </div>
+
+        <div id="div2">
+        <h3 class="heading-font"><ol>Foods to <em>Look More</em> Into:</ol></h3>
+            <br>
+            <img src="images/eat-2834549_640.jpg" src="healthyVeggies">
+            <li>Veggies: fresh, frozen, canned</li>
+            <li>Fruits, but preferably whole fruits</li>
+            <li>High protein/fiber: eggs, cheese, lean cuts of meat, etc</li>
+        </ol>
+        </div>
+    </div>
+        <!--This is a comment, a weird looking one may I add-->
+        <br>
+        <table id="foodLog">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Food Consumed</th>
+                    <th>Food Category</th>
+                    <th>Calories</th>
+                </tr>
+            </thead>
+        </table>
+        <!--figure out how to link to another one of my html page-->
+        <form action="menu1.html" method="POST">
+            <!--action will send data, method will add data on server-->
+            <label>
+                Testing
+            </label>
+            <input type="text" placeholder="Type Something Here...">
+            <button type="submit" target="_blank" class="heading-font" required>Submit</button>
+            <label for="id">
+                <input id="id" type="radio" name="types-of-input" value="Hello" checked>Hello
+            </label>
+            <label for="id2">
+                <input id="id2" type="checkbox" name="types-of-input" value="Bye" checked>Bye
+            </label>
+        </form>
+        <br>
+        <!--How to make a table-->
+        <table>
+            <thead>
+                <tr class="heading-font">
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Birthday</th>
+                </tr>
+                <tr>not a row heading</tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rose X.</td>
+                    <td>x.rose1966@gmail.com</td>
+                    <td>20</td>
+                    <td>04/28/2001</td>
+                </tr>
+                <tr>
+                    <td>2nd Name</td>
+                    <td>
+                        <label>
+                            <input type="email" placeholder="Type Email Here">
+                        </label>
+                    </td>
+                    <td>
+                        <label>Age
+                            <input type="number" name="age" value="30">
+                        </label>
+                    </td>
+                    <td>
+                        <label>Birthday
+                            <input type="date" name="birthday">
+                        </label>
+                    </td>
+                </tr>
+                <tr>this will follow up the first one</tr>
+            </tbody>
+        </table>
+        <label id="forum">Select in the dropdown a security question:</label>
+            <select name="SecurityQuestion">
+                <option>What is your maiden's name?</option>
+                <option>What was your first pet?</option>
+                <option>Which middle school did you attend?</option>
+            </select>
+    </body>
+</html>

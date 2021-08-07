@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chen's Cafe</title>
+        <meta name="description" content="Chen's Cafe Menu">
+        <meta name="keywords" content="">
+        <link rel="stylesheet" href="/CSS/menu1.css">
+        <style>
+            .headings {
+                font-family: Arial, Helvetica, sans-serif;
+                letter-spacing: 2px;
+                text-align: center;
+    text-transform: uppercase;
+                }          
+        </style>
+    </head>
+    <body style="background-color: lightsalmon;">
+        <img src="images/ChensCafe.png" alt="Chen's Cafe Logo">
+        <h1 class="headings">Chen's Cafe</h1>
+        <a href="https://d6ozfheqtj1tz.cloudfront.net/ChIJoVjBxsQoU4gR2UP_ObQT3qk/5c5295cdedcef.jpg" target="_blank">
+            <img src="https://d6ozfheqtj1tz.cloudfront.net/ChIJoVjBxsQoU4gR2UP_ObQT3qk/5c5295cdedcef.jpg" alt="Front Side of Menu" width="400px">
+        </a>
+        <a href="https://d6ozfheqtj1tz.cloudfront.net/ChIJoVjBxsQoU4gR2UP_ObQT3qk/5c5295ccd5d73.jpg" target="_blank">
+            <img src="https://d6ozfheqtj1tz.cloudfront.net/ChIJoVjBxsQoU4gR2UP_ObQT3qk/5c5295ccd5d73.jpg" alt="Back Side of Menu" width="400px">
+        </a>
+    <cite><br>Chen's Cafe Menu</cite> by Sirved.com
+
+        <div id="container">
+                <div id="item1">
+            <h2 class="headings">Hours</h2>
+            <table >
+                <thead>
+                    <tr>
+                        <th>|Sunday|</th>
+                        <th>Monday-Thursday|</th>
+                        <th>Friday-Saturday|</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Closed</td>
+                        <td>11:00-9:00</td>
+                        <td>11:00-10:00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <h2 class="headings centerText">Address</h2>
+            <p style="text-align: center;">1183 University Dr., Burlington, NC 27215</p>
+            <p class="centerText"><em>Welcome! We hope you enjoy our dishes as they are cooked with fresh ingredients and handled with great care. 
+                Our chefs are vigilant and work hard to provide the best-tasting Chinese meals, 
+                and our front-end employees strive to ensure you experience good customer service. 
+                Enjoy your visit and thank you!
+            </em></p>
+            <blockquote class="introduction">I can't stay away from Chinese food. I really love that stuff.
+                Read more at https://www.brainyquote.com/topics/chinese-food-quotes</blockquote>
+            </div>
+            <div id="item2">
+            <br>
+            <b class="headings">Please fill out the form below. We will have the order ready <abbr title="as soon as possible">ASAP</abbr>!</b>
+            <form action="" method="POST">
+                <input type="text" name="firstName" placeholder="First Name">
+                <input type="number" name="4digitNum" placeholder="Phone Number (last 4)">
+                <br>
+                <input type="number" name="numEating" placeholder="# of Customers" value="1">
+                <input type="date" name="pickupDate" placeholder="Date of Pickup">
+                <br>
+                <label for="submit">
+                    <input id="submit" type="button" value="Submit">
+                </label>
+            </div>
+        </div>
+            </form>
+        <div id="secContainer">
+            <div id="secContainerItems">
+        <div id="sec1">
+            <h3 class="headings">Appetizers</h3>
+                <table id="appTable">
+                    <tbody>
+                        <tr>
+                            <td>Spring Rolls(2)---</td>
+                            <td>$1.55</td>
+                        </tr>
+                        <tr>
+                            <td>Crab Rangoons(6)---</td>
+                            <td>$4.25</td>
+                        </tr>
+                        <tr>
+                            <td>French Fries(L)---</td>
+                            <td>$3.75</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+        <div id="sec2">
+            <h3 class="headings">Soups</h3>
+            <table id="soupTable">
+                <tbody>
+                    <tr>
+                        <td>Wonton Soup(s)---</td>
+                        <td>$2.75</td>
+                    </tr>
+                    <tr>
+                        <td>Egg Drop Soup(s)---</td>
+                        <td>$1.75</td>
+                    </tr>
+                    <tr>
+                        <td>Hot&Sour Soup(s)---</td>
+                        <td>$3.75</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+        <div id="sec3">
+            <h3 class="headings">Top Customer Picks</h3>
+            <p>Will come with pork fried rice and a choice of <br> Pork Egg Roll or soup: Wonton, Egg Drop, or Hot&Sour.</p>
+            <label>Combo:
+                <input type="radio" name="combo" value="Lunch" checked>Lunch
+                <input type="radio" name="combo" value="Dinner">Dinner
+            </label>
+            <br>
+            <form action="" method="POST">
+            <label class="headings" style="color: maroon;">Select your side:</label>
+                <select name="sideSelect">
+                    <option>Pork Egg Roll</option>
+                    <option>Wonton Soup</option>
+                    <option>Egg Drop Soup</option>
+                    <option>Hot&Sour Soup</option>
+                </select>
+            <ol id="comboList">
+                <li>Lomein (chicken, pork, or shrimp)</li>
+                <li>Chicken Wings</li>
+                <li>Sesame Chicken</li>
+                <li>Kung Pao</li>
+                <li>Garlic</li>
+                <li>Hunan</li>
+                <li>Broccoli w. (chicken, beef, or shrimp)</li>
+            </ol>
+            <input type="text" placeholder="Comments for personalizations">
+            <label for="submission">
+                <input id="submission" class="headings" type="button" value="Submit">
+            </label>
+        </form>
+        </div>
+    </div>
+    <footer>
+       For more information, call us at (336)-584-1898 or contact us through <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">email</a>. Thank you for visiting!
+    </footer>
+    </body>
+</html>

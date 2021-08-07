@@ -1,0 +1,33 @@
+Front-end is what you see and involve interactions while back-end deals with data and support front-end. 
+Front has HyperText Markup Language (skeleton), Cascading Style Sheets (appearance), and JavaScript (functions).
+Programming languages tells the computer what to do.
+Frameworks/Libraries are collections of codes for repetitive tasks (angular, react, vue)
+Version Control System (Git) allows project collaborations and project history tracking
+Uniform Resource Locator works between the client's browser and the server to which the desired webpage of the website resides.
+HyperText Transfer Protocol is the language between client and server; S involves Encryption 
+---------------
+HTTP/1.1 200 OK
+Date Time
+Content-Type
+HTML source code
+----------------
+Document Object Model (DOM) are the building blocks 
+"rendering" means to display
+
+Understanding elements, attributes as key"Value"Pairs, ids, names, tags
+index.html will always be the root html of a website
+input types include: text, radio, checkboxes, date, number
+Can create select list with select and option tags
+Inline vs block tags
+
+new tags I did not know: cite, abbr, blockquote, em, b, table, etc
+HTML5 Semantic tags tells the browser and developers what each part of the html does: HTML, nav, article, section, aside, footer, details
+	Articles are self sustaining content while sections rely on surrounding materials
+
+ID are unique for each element--> id=""
+Classes are applicable to multiple element and each element can have multiple classes--> class="name1 name2 name3"
+Names are used in forum input elements to ensure correct data input--> name=""
+
+HTML elements follow a box model to which the next in the following list boxes around the previous box: content, padding, border, margin.
+Padding is the content in relation to its own room while margin is the space in relation to the other elements in the document.
+One line CSS uses Clockwise notation: top right bottom left;

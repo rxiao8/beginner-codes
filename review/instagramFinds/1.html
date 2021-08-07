@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="1.css">
+    </head>
+    <body>
+        <script>
+            function openImage(imgs){
+                var expandImg= document.getElementById("expandedImg");
+                var imgText= document.getElementById("imgtext");
+                expandImg.src = imgs.src;
+                imgText.innerHTML = imgs.alt
+                expandImg.parentElement.style.display = "block";
+            }
+        </script>
+        <header>
+            <h2>Image Viewer</h2>
+            <p>Click on the images for nothing to occur.</p>
+        </header>
+
+        <div class="img-row">
+            <div class="column">
+                <img src="/images/james_gurney.jpg" alt="Gurney" onclick="openImage(this);">
+            </div>
+            <div class="column">
+                <img src="/images/Kento_Nanami_(Volume_11).png" alt="Nanami" onclick="openImage(this);">
+            </div>
+            <div class="column">
+                <img src="/images/eat-2834549_640.jpg" alt="Food" onclick="openImage(this);">
+            </div>
+        </div>
+
+        <div class="container">
+            <span onclick="this.parentElement.style.display='none'"
+            class="closbtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+        </div>
+
+    </body>
+</html>

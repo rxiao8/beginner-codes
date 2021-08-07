@@ -1,0 +1,198 @@
+.columns{
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    flex: 0;
+
+    margin: 2px;
+    
+    text-align: center;
+    
+    
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 450px;
+    height: 50%vh;
+
+    background-color: rgb(255, 200, 196);
+    padding: var(--general-padding);
+    margin-bottom: 30px;
+
+    box-shadow: -5px 7px 5px rgb(247, 78, 148);
+
+}
+
+#bottomCon{
+    display: flex;
+    flex-direction: row;
+    
+
+    position: relative;
+    flex: 1;
+    padding: var(--general-padding);
+    padding-top: 0;
+}
+
+
+
+#numPad{
+    display: flex;
+    flex-direction: row;
+
+    flex: 1;
+}
+
+#numPad .columns{
+    flex: 1;
+}
+
+#numPad span{
+    border-radius: 2em;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+#operations{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 2;
+
+}
+
+#operations span{
+    border-radius: 50%;
+    margin: 5px;
+
+    font-size: larger;
+    background-color: lightgray;
+}
+
+
+#output{
+    
+    background-color: #FFFFFF;
+    padding: var(--general-padding);
+    border: 3px outset gray;
+
+    text-align: right;
+}
+
+.paleOrangeButton span{
+    background-color: rgba(241, 182, 70, 0.863);
+}
+:root{
+    --button-padding: 15px;
+    --general-padding: 10px;
+}
+
+#row{
+    display: flex;
+    align-content: stretch;
+
+    padding: var(--general-padding);
+
+    text-align: center;
+
+}
+
+#row span:hover, #numPad span:hover, #operations span:hover{
+        transform: scale(1.03);
+    
+}
+
+#row span{
+    border: 2px groove rgb(233, 149, 163);
+}
+
+
+span{
+    flex: 1;
+
+    padding: var(--button-padding);
+    border: 3px outset gray;
+
+    
+}
+#topCon{
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    padding: var(--general-padding);
+    padding-bottom: 0px;
+}
+
+
+/*fix numpad: did it!*/
+/*align the buttons, add another button to row, have the calc fixed*/
+/*How to select multiple selectors: http://www.websiteoptimization.com/speed/tweak/groupsel/*/
+/*How to apply hover to multiple selectors*/
+
+#container2{
+    display: grid;
+    grid-template-rows: 30% 70%;
+    width: 450px;
+    height: 700px;
+
+    grid-gap: 5px;
+
+    background-color: gray;
+    padding: var(--general-padding);
+    margin-bottom: 30px;
+
+    box-shadow: -5px 7px 5px rgb(78, 179, 247);
+}
+
+#bottomCon2{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.gridSpan{
+    padding: var(--button-padding);
+    border: 3px outset gray;
+
+    border-radius: 2em;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+
+    background-color: rgba(241, 182, 70, 0.863);
+
+    /*align-self: center;*/
+}
+
+.gridSpan:hover{
+    transform: scale(1.03);
+}
+#numPad2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+#operations2{
+    display: grid;
+    grid-template-rows: repeat(4, 15%) 40%;
+}
+
+#output2{
+    background-color: white;
+}
+#row2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#topCon2{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+/*make things look better hehe*/

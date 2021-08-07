@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: min(800px, 80%);
+    margin: auto;
+    padding: 50px;
+    background-color: #F8F9FD;
+
+}
+
+header{
+    text-align: center;
+}
+
+.column img{
+    opacity: .8;
+    cursor: pointer;
+    width: 100%;
+}
+
+.column img:hover{
+    opacity: 1;
+    transform: scale(1.02);
+    transition: .3s;
+}
+
+/*exanding image container*/
+.container{
+    position:relative;
+    display: none;
+    top: 20px;
+}
+/*expanding image text*/
+#imgtext{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/*closable button inside the expanded image*/
+.closebtn{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+.img-row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}

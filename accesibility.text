@@ -1,0 +1,42 @@
+semantic tags & heading tags help screen readers by relating to main content, article, etc
+The alt attribute helps the visually impaired by reading out loud what the image is, except for decor images
+
+<div>--> group content
+<section>--> group related content
+<article>--> group individual content
+
+RSS feed
+
+<nav> --> containing list of links
+<footer> --> wrapping up related docs, copyright, links
+<header> --> contain intro info and visuals
+<figure>
+    <figcaption> --> wrap self-contained visuals with captions together
+
+<form>
+    <label> Indicates what the inputs are for<input></input></label>
+
+    for radio buttons:
+        <fieldset>
+            <legend>the description</legend>
+            <label>
+            <input>
+        </fieldset>
+
+
+Can wrap time/date related text with <time datetime=""></time> which helps assists the visually impaired and in a machine-readable format
+
+a way to have info only for screen readers, like a diff. visual format
+    .sr-only { 
+        position: absolute;
+        left: -10000px;
+        width: 1px;
+        height: 1px;
+        top: auto;
+        overflow: hidden;
+    }
+
+Web Content Accessible has tools to check qualified usage based on contrast/colors with ratios for colorblindness
+
+accesskey attribute are great for shortcut keys!!
+tabindex attribute controls the sequence of tabbing through page (usually enforced for elements not inheritaly tabbable)
