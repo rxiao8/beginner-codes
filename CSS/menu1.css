@@ -1,0 +1,94 @@
+a{
+    text-decoration: none;
+    color:blue;
+    
+}
+
+
+
+a:hover{
+    color: red;
+}
+
+a:visited{
+    color: purple;
+}
+
+.centerText{
+    padding: var(--generic-padding) 10px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#comboList{
+    list-style-image: url(/images/noodlesClipArtMinii.png);
+    margin-left: 25px;
+    text-align: left;
+}
+
+
+#container{
+    display: flex;
+    flex-direction: row;
+    padding: var(--generic-padding);
+    margin: 10px;
+    box-shadow: 3px 10px salmon;
+    
+
+}
+
+img{
+    display: inline-block;
+    border: 2px solid brown;
+    border-radius: 20%;
+    image-rendering: crisp-edges;
+    box-shadow: 3px 10px salmon;
+    
+}
+
+img:hover{
+    transform: rotateY(20deg);
+}
+
+#item1{
+    background-color: rgba(210, 180, 140, .4);
+    padding: var(--generic-padding);
+}
+
+#item2{
+    background-color: rgba(222, 184, 135, .4);
+    padding: var(--generic-padding);
+}
+
+.introduction{
+    text-align: center;
+}
+
+:root{
+    --generic-padding: 20px;
+    --generic-margin: 5px;
+}
+
+
+
+
+#secContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: var(--generic-padding);
+    margin: ver(--generic-margin);
+}
+
+#secContainerItems{
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    padding: 10px;
+    margin: 10px;
+    
+    
+}
+

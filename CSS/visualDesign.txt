@@ -1,0 +1,34 @@
+The position property lets you offset an item without disturbing its surrounding content
+    position: relative;
+    top: 10px;
+
+block vs inline: first sets each box individually while inline sets contents in same box
+
+Relative: moves relative to original natural flow of documents
+Absolute: moves based on the closest ancestor position and will be removed from natural flow  
+    ex: box within box
+Fixed: stays when user scrolls, like the navigation bar
+Float: wrap text or move items within given space of parent element
+
+Primary, Secondary, Tertiary, Split Complementary
+CSS3 color property--> hsl(hue, saturation, lighting)
+    tint(add white), shade(add black), tone(add both)
+
+linear-gradient(deg, color, color) and repeating-linear-gradient
+
+ANIMATION TIME!
+selector{
+    position(must have!):;
+    animation-name:;
+    animation-duration:;
+    animation-iteration-count:;
+    animation-fill-mode: forwards;
+}
+
+@keyframes name{
+    %{}
+    %{}
+}
+
+
+Cubic Bezier Motion
