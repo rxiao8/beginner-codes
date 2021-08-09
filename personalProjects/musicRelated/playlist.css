@@ -1,0 +1,104 @@
+ h1, h3{ 
+    font-family:fantasy;
+    
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-align: center;
+    color:rgb(143, 38, 143);
+    word-spacing: 5px;
+    word-wrap: normal;
+    
+    
+
+}
+
+.textBoxes{
+    text-align: center;
+}
+
+body{
+    background-color: rgb(104, 189, 211);
+    
+}
+/*
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.playlist{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: 100%;
+    justify-content: space-around;
+}
+
+.section1{
+
+}
+.section2{
+
+}*/
+
+.songPic{
+
+    height: auto;
+    padding: .5%;
+    
+
+    border: 1px groove rgb(226, 224, 107);
+    border-radius: 30%;
+
+    opacity: .5;
+
+    transition: transform .5s;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%
+} 
+
+.songPic:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+img {
+    width:195px;
+    height: auto;
+
+    margin: auto;
+    border: 3px dotted rgb(30, 108, 134);
+
+}
+
+.section {
+    background-color: rgb(255, 199, 225);
+    border: 2px solid rgb(233, 128, 177);
+    border-radius: 10%;
+    flex: 50%;
+
+    margin: 15px;
+    padding: 20px;
+
+    justify-content: center;
+   
+
+    
+
+
+
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-basis: auto;
+    
+}
+
